@@ -1,3 +1,3 @@
 # PHP Study Start
-OS : Linux CentOS7
-Server : Apache
+* OS : Linux CentOS7
+* Server : Apache
