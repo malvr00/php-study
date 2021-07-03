@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Form 연습</title>
+  </head>
+  <body>
+    <h2>Table을 사용한 Form</h2>
+    <form action="sj303.php" method="POST">
+      <table border="1">
+        <tr>
+          <th>개인 정보</th>
+          <td>
+            <table>
+              <tr>
+                <td>이름</td>
+                <td>
+                  <input type="text" name="user_name" value="" />
+                </td>
+              </tr>
+              <tr>
+                <td>우편번호</td>
+                <td>
+                  <input type="text" name="user_zip" value="" />
+                </td>
+              </tr>
+              <tr>
+                <td>주소</td>
+                <td>
+                  <input type="text" name="user_address" value=""/>
+                </td>
+              </tr>
+              <tr>
+                <td>전화번호</td>
+                <td>
+                  <input type="text" name="user_tel" value="" />
+                </td>
+              </tr>
+              <tr>
+                <td>E-Mail</td>
+                <td>
+                  <input type="text" name="user_email" value="" />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <th>Programming<br>선택</th>
+          <td>
+            <select name="user_pgm">
+              <option value="C/C++">C/C++ Programming</option>
+              <option value="Java">Java Programming</option>
+              <option value="php">php Programming</option>
+              <option value="Lunex">Linex Server</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>자격증 과정</th>
+          <td>
+            <input type="radio" name="group1" value="기능사" />
+                정보처리 기능사<br>
+            <input type="radio" name="group1" value="산업기사" />
+                정보처리 산업기사<br>
+            <input type="radio" name="group1" value="기사" checked="checked"/>
+                정보처리기사
+          </td>
+        </tr>
+        <tr>
+          <th>구분</th>
+          <td>
+            <input type="checkbox" name="chk1" value="필기" checked="checked"/>
+              필기과정<br>
+            <input type="checkbox" name="chk2" value="실기" /> 실기과정
+          </td>
+        </tr>
+        <tr>
+          <th>비고</th>
+          <td>
+            <textarea name="user_note" rows="5" cols="30"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th><th>
+          <td>
+            <input type="submit" value="등록" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

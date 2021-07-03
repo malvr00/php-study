@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Form 사용 연습</title>
+  </head>
+  <body>
+    <h3>Get 방식의 폼을 사용합니다.</h3>
+    <form action="sj301get.php" method="get">
+      아래 내용을 입력하세요.<br>
+      <label for="g_name">이름 : </label>
+      <input type="text" name="g_name" value=""/><br>
+      <label for="g_address">주소 : </label>
+      <input type="text" name="g_address" id="g_address" value="사창동"/><br>
+      <input type="submit"/>
+      <input type="reset"/>
+    </form>
+    <h3>Post방식의 폼을 사용합니다.</h3>
+    <form action="sj301post.php" method="post" target="_blank">
+      아래 내용을 입력하세요.<br>
+      이름 : <input type="text" name="p_name" value="" size="10" /><br>
+      주소 : <input type="text" name="p_address" value="" maxlength="5"/><br>
+      <input type="submit" value="입력"/>
+      <input type="reset" value="지우기"/>
+    </form>
+  </body>
+</html>
