@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Layout 연습</title>
+    <link type="text/css" rel="stylesheet" href="./css/SjLayout.css"/>
+  </head>
+  <body>
+    <header id="main_header">
+      <div id="title"> <h1>방명록</h1></div>
+      <nav id="main_gnb">
+        <ul>
+          <li><a href="sj412.html">Counter</a></li>
+          <li><a href="sj413.php">1줄 메모장</a></li>
+          <li><a href="sj414.htm">방명록</a></li>
+        </ul>
+      </nav>
+      <nav id="main_lub">
+        <ul>
+          <li><a href="sj412.htm">Counter</a></li>
+          <li><a href="sj413.php">1줄 메모장</a></li>
+          <li><a href="sj414.htm">방명록</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="content">
+      <section id="main_section">
+        <article class="main_article">
+          <h1>Main Artcle</h1>
+          <p>Web Page Layout 연습입니다.</p>
+        </article>
+        <article class="main_article">
+          <div class="form_class"><h1>방명록 입력</h1></div>
+            <form action="sj414write.php" method="POST">
+              <fieldset id = "form_fieldset">
+                <legend>아래 내용을 입력하세요.</legend>
+                <ul>
+                  <li><label for="name">이름</label>
+                      <input type="text" name="user_name" id="name" value=""/></li>
+                  <li><label for="password">비밀번호</label>
+                      <input type="password" name="user_password" id="password" value=""/></li>
+                  <li><label for="email">e-mail</label>
+                      <input type="text" name="user_email" id="email" value=""/></li>
+                  <li><label for="comment">남 긴 글</label>
+                      <textarea name="user_comment" id="comment" rows="9" cols="50"> </textarea></li>
+                </ul>
+                <div class="form_class">
+                  <input type="submit" value="입 력" />
+                  <input type="reset" value="지우기" />
+                  <a href="sj414list.php">방명록 보기 화면으로</a>
+                </div>
+              </fieldset>
+            </form>
+        </article>
+      </section>
+      
+      <aside id="main_aside">
+        <ul><li class="item"><a href="sj412.html">
+            <div class="thumbnail">
+              <img src="./images/sejongmark.png" />
+            </div>
+            <div class="description">
+              <strong>Counter</strong>
+            </div>
+          </a></li>
+          <li class="item"><a href="sj413.php">
+            <div class="thumbnail">
+              <img src="./images/sejongmark.png" />
+            </div>
+            <div class="description">
+              <strong>1줄 메모장</strong>
+            </div>
+          </a></li>
+          <li class="item"><a href="sj414.htm">
+            <div class="thumbnail">
+              <img src="./images/sejongmark.png" />
+            </div>
+            <div class="description">
+              <strong>방명록</strong>
+            </div>
+          </a></li>
+        </ul>
+      </aside>
+    </div>
+    <footer id="main_footer">
+      <h3>세종 컴퓨터 학원</h3>
+      <address>충북 청주시 사창동</address>
+    </footer>
+  </body>
+</html>
