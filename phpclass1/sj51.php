@@ -25,7 +25,7 @@
       echo ' global $age = ' . $age . ' <br>';
     }
   }
-  $age = 111;
+  $age = 222;
   $nAge1 = new NameAgeClass();
   $nAge1->age = 111;
   $nAge1->setNameAge('sejong',33);
